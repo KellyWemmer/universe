@@ -8,7 +8,7 @@ class GalaxiesService {
     }
 
     async createGalaxy(galaxyData) {
-        let galaxy = await dbContext.create(galaxyData)
+        let galaxy = await dbContext.Galaxies.create(galaxyData)
         return galaxy
     }      
 }

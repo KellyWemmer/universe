@@ -3,9 +3,7 @@ const Schema = mongoose.Schema
 
 export const GalaxySchema = new Schema(
   {
-    name: { type: String, required: true},
-    temp: { type: Number,}
-    
+    name: { type: String, required: true},    
   },
   { timestamps: true, toJSON: { virtuals: true } }
 )
